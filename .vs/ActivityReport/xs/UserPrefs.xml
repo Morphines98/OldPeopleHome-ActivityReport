@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{E01051FC-76E3-44D4-B096-303C8370C1A0}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mariacalutu/Desktop/work/az/SendChatPushNotifications/SendChatPushNotifications.cs" relfile="SendChatPushNotifications/SendChatPushNotifications.cs" line="23" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SendChatPushNotifications/local.settings.json">
+    <Files>
+      <File FileName="SendChatPushNotifications/SendChatPushNotifications.cs" Line="20" Column="1" />
+      <File FileName="SendChatPushNotifications/Startup.cs" Line="29" Column="1" />
+      <File FileName="SendChatPushNotifications/local.settings.json" Line="4" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ActivityReport" expanded="True">
+            <Node name="ActivityReport" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ActivityReport PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

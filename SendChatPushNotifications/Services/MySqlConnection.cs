@@ -26,7 +26,8 @@ namespace SendChatPushNotifications.Services
 
     public void GetActivityReport()
     {
-      string query = $"select Id, Title, GroupId, Date from activities where Date > '${DateTime.Now.AddDays(-3).ToString("yyyy-dd-MM HH:mm:ss")}'";
+      string query = $"select Id, Title, GroupId, Date from activities where Date > '"+DateTime.Now.AddDays(-3).ToString("yyyy-dd-MM HH:mm:ss") +"' " +
+                "and Date < '" + DateTime.Now.ToString("yyyy-dd-MM HH:mm:ss") +"'";
       var activities = _connection.Query<Activity>(query).ToList();
 
       var groupIds = activities.Select(a => a.GroupId).Distinct().ToList();
