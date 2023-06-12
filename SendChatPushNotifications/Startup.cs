@@ -24,7 +24,6 @@ namespace SendChatPushNotifications
       {
         return new MySqlConnectionDbConnection(dbConnectionString);
       });
-
     }
 
     public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
@@ -40,7 +39,6 @@ namespace SendChatPushNotifications
 
       if (!string.IsNullOrEmpty(keyVaultEndpoint))
       {
-        // Using Key Vault, either local dev or deployed
         builder.ConfigurationBuilder.AddAzureKeyVault(new Uri(keyVaultEndpoint), new DefaultAzureCredential());
       }
       builder.ConfigurationBuilder.Build();
