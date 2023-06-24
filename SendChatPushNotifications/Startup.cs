@@ -39,7 +39,8 @@ namespace SendChatPushNotifications
 
       if (!string.IsNullOrEmpty(keyVaultEndpoint))
       {
-        builder.ConfigurationBuilder.AddAzureKeyVault(new Uri(keyVaultEndpoint), new DefaultAzureCredential());
+        builder.ConfigurationBuilder.AddAzureKeyVault(new Uri(keyVaultEndpoint)
+                            ,new DefaultAzureCredential());
       }
       builder.ConfigurationBuilder.Build();
     }

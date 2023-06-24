@@ -26,7 +26,8 @@ namespace SendChatPushNotifications.Services
 
     public void GetActivityReport()
     {
-      string query = $"select Id, Title, GroupId, Date from activities where Date > '"+DateTime.Now.AddDays(-3).ToString("yyyy-dd-MM HH:mm:ss") +"' " +
+      string query = $"select Id, Title, GroupId, Date from activities " +
+                $"where Date > '"+DateTime.Now.AddDays(-3).ToString("yyyy-dd-MM HH:mm:ss") +"' " +
                 "and Date < '" + DateTime.Now.ToString("yyyy-dd-MM HH:mm:ss") +"'";
       var activities = _connection.Query<Activity>(query).ToList();
 
@@ -89,8 +90,6 @@ namespace SendChatPushNotifications.Services
 
         SendEmailWithTemplateAsync(user.Email, dynamicObject).Wait();
       }
-
-      Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(usersObject));
     }
 
     public async Task SendEmailWithTemplateAsync(string email, object dynamicTemplateData)
