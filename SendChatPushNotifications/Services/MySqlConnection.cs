@@ -15,8 +15,8 @@ namespace SendChatPushNotifications.Services
   public class MySqlConnectionDbConnection
   {
     private readonly MySqlConnection _connection;
-    private readonly string _sendGridKey = "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";
-    private readonly string _templateId = "d-9b89430aa4564d05aa0933a0a72eeaa2";
+    private readonly string _sendGridKey = "gjhdkjgfhkdjhkdfjh";
+    private readonly string _templateId = "notyourbusiness";
 
     public MySqlConnectionDbConnection(string connectionString)
     {
